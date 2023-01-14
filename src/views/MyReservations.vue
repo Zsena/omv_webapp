@@ -1,13 +1,23 @@
+<script>
+import FixedNav from '../components/FixedNav.vue';
+</script>
+
 <template>
-    <ul>
-        <li>
-            <RouterLink to="/current-available-places">Aktuális szabad helyek</RouterLink>
-        </li>
-        <li>
-            <RouterLink to="/">Előre foglalás</RouterLink>
-        </li>
-        <li>
-            <RouterLink to="/">Hely bérlés</RouterLink>
-        </li>
+  <div class="flex items-center justify-center pt-20">
+    <ul class="flex flex-col justify-center items-center">
+      <li class="mb-10 w-full">
+        <RouterLink to="/current-available-places" class="regular-filled-btn"
+          >Aktuális szabad helyek</RouterLink
+        >
+      </li>
+      <li class="mb-10 w-full">
+        <RouterLink to="/" class="regular-filled-btn"
+          >Előre foglalás</RouterLink
+        >
+      </li>
+      <li class="mb-10 w-full">
+        <RouterLink to="/" class="regular-filled-btn">Hely bérlés</RouterLink>
+      </li>
     </ul>
+  </div>
 </template>

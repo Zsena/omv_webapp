@@ -1,13 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import Menu from "./components/Menu.vue";
+import FixedNav from "./components/FixedNav.vue";
+import BaseMenu from "./components/Menu.vue";
 </script>
 
 <template>
   <header class="gradient-blue">
-    <Menu />
-
+    <BaseMenu />
   </header>
-
   <RouterView />
+  <FixedNav />
 </template>

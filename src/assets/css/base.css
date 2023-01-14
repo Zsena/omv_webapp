@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.gradient-blue {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, #036),
+    color-stop(70%, #008fd1),
+    color-stop(90%, #036)
+  );
+  background-image: linear-gradient(-270deg, #036 50%, #008fd1 70%, #036 90%);
+}
+
+.base-box-shadow {
+  -webkit-box-shadow: 0 3px 3px 0 rgb(0 0 0 / 35%);
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 35%);
+}
+
+@layer utilities {
+  .base-border-bottom {
+    border-bottom: 0.3125rem solid #6c0;
+  }
+
+  .second-border-bottom {
+    border-bottom: 0.1125rem solid #6c0;
+  }
+}

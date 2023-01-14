@@ -1,0 +1,16 @@
+.dropdown-wrapper.nav-item {
+  @apply text-right hover:bg-white flex items-center justify-center;
+}
+
+.dropdown-item {
+  @apply text-sm text-zinc-500 px-3 my-1 hover:bg-white;
+}
+
+.dropdown {
+  @apply right-0 -top-[260px] rounded-lg invisible bg-light;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown.active {
+  @apply visible;
+}
