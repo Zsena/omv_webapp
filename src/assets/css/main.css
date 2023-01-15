@@ -2,7 +2,7 @@
 @import './components/_buttons.css';
 @import './layout/nav.css';
 @import './components/_dropdown.css';
-
+@import './components/typo.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,0 +1,23 @@
+.h1-elem {
+    @apply text-3xl text-blue md:text-4xl lg:text-5xl;
+}
+
+.h2-elem {
+    @apply text-2xl text-blue lg:text-4xl md:text-3xl;
+}
+
+.h3-elem {
+    @apply text-xl text-blue md:text-2xl lg:text-3xl;
+}
+
+.h4-elem {
+    @apply text-lg text-blue md:text-xl lg:text-2xl;
+}
+
+.h5-elem {
+    @apply text-base text-blue md:text-lg lg:text-lg;
+}
+
+.h6-elem {
+    @apply text-sm text-blue lg:text-lg md:text-base;
+}

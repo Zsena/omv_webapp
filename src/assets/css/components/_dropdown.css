@@ -7,10 +7,15 @@
 }
 
 .dropdown {
-  @apply right-0 -top-[260px] rounded-lg invisible bg-light;
+  @apply right-0 lg:left-0 -top-[260px] lg:-top-[210px] rounded-lg invisible bg-light;
   box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown.active {
   @apply visible;
+}
+
+.dropdown-bottom {
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.1);
+    @apply bg-white absolute z-[-1] -bottom-2 right-3 lg:left-3 w-3 h-3 transform rotate-45 -mt-1;
 }
