@@ -12,9 +12,14 @@
       </div>
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <ul class="main-navbar">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <RouterLink class="nav-link" to="/registration">
               <span><img src="@/assets/img/svg/login.svg" alt="svg"></span> <span class="ml-2">Regisztráció</span>
+            </RouterLink>
+          </li> -->
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/location-selector">
+              <span><img src="@/assets/img/svg/reservation.svg" alt="svg"></span><span class="ml-2">Helyszín választó</span>
             </RouterLink>
           </li>
           <li class="nav-item">

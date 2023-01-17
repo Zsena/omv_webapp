@@ -24,7 +24,7 @@
 }
 
 .fixed-nav .fixed-navbar {
-  @apply fixed bottom-0 inset-x-0 lg:top-1/2 lg:right-1/4 bg-sky-100 flex justify-between lg:flex-col lg:max-w-[100px] text-xs text-blue;
+  @apply fixed bottom-0 inset-x-0 lg:hidden lg:top-1/2 lg:right-1/4 bg-sky-100 flex justify-between lg:flex-col lg:max-w-[100px] text-xs text-blue;
 }
 
 .fixed-navbar .nav-item {

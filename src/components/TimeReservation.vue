@@ -4,7 +4,7 @@
             <h3 class="h4-elem mb-4">
                 Válogass kedvedre szabad helyeink között
             </h3>
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-white rounded-lg shadow-lg mb-20">
                 <div class="flex items-center justify-between py-2 px-6">
                     <div>
                         <span v-text="year" class="ml-1 text-lg text-blue font-normal"></span>.
@@ -25,19 +25,32 @@
                     </div>
                 </div>
                 <div class="-mx-1 -mb-1">
-                    <div class="flex flex-wrap border-t border-l border-green">
-                        <div class="px-4 pt-2 border-r border-b border-green relative h-80 lg:h-full w-full overflow-hidden">
-                            <div class="overflow-y-auto mt-1 h-80 lg:h-full pb-5 flex flex-wrap justify-center lg:justify-start">
+                    <div class="flex flex-wrap border-t border-green">
+                        <div class="px-4 pt-2 relative h-full w-full">
+                            <div class="mt-1 h-full pb-5 flex flex-wrap justify-center lg:justify-start">
+                                <template v-for="stump in time_stump_busy">
+                                    <div class="flex items-center justify-start m-2 rounded-lg border p-4 border-red-500 text-red-500 bg-light">
+                                        <div v-text="stump" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"></div>
+                                    </div>
+                                </template>
                                 <template v-for="stump in time_stump">
                                     <div class="flex items-center justify-start m-2 rounded-lg border p-4 border-blue text-blue bg-light">
                                         <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2" />
                                         <label for="link-checkbox" v-text="stump" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"></label>
                                     </div>
                                 </template>
+                                <template v-for="stump in time_stump_busy">
+                                    <div class="flex items-center justify-start m-2 rounded-lg border p-4 border-red-500 text-red-500 bg-light">
+                                        <div v-text="stump" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"></div>
+                                    </div>
+                                </template>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="my-10 w-full">
+                <RouterLink to="/end-of-reservation" class="regular-filled-btn max-w-[300px] mx-auto">Foglalás véglegesítése</RouterLink>
             </div>
         </div>
     </section>
@@ -64,42 +77,55 @@
                     "Január 13",
                 ],
                 time_stump: [
-                    "08:00",
-                    "08:10",
-                    "08:20",
-                    "08:30",
-                    "08:40",
-                    "08:50",
-                    "09:00",
-                    "09:10",
-                    "09:20",
-                    "09:30",
-                    "09:40",
-                    "09:50",
-                    "08:00",
-                    "08:10",
-                    "08:20",
-                    "08:30",
-                    "08:40",
-                    "08:50",
-                    "09:00",
-                    "09:10",
-                    "09:20",
-                    "09:30",
-                    "09:40",
-                    "09:50",
-                    "08:00",
-                    "08:10",
-                    "08:20",
-                    "08:30",
-                    "08:40",
-                    "08:50",
-                    "09:00",
-                    "09:10",
-                    "09:20",
-                    "09:30",
-                    "09:40",
-                    "09:50",
+                    "08:00 - szabad hely ( 5db )",
+                    "08:10 - szabad hely ( 3db )",
+                    "08:20 - szabad hely ( 2db )",
+                    "08:30 - szabad hely ( 4db )",
+                    "08:40 - szabad hely ( 5db )",
+                    "08:50 - szabad hely ( 5db )",
+                    "09:00 - szabad hely ( 5db )",
+                    "09:10 - szabad hely ( 5db )",
+                    "09:20 - szabad hely ( 5db )",
+                    "09:30 - szabad hely ( 5db )",
+                    "09:40 - szabad hely ( 5db )",
+                    "09:50 - szabad hely ( 5db )",
+                    "08:00 - szabad hely ( 5db )",
+                    "08:10 - szabad hely ( 5db )",
+                    "08:20 - szabad hely ( 5db )",
+                    "08:30 - szabad hely ( 5db )",
+                    "08:40 - szabad hely ( 5db )",
+                    "08:50 - szabad hely ( 5db )",
+                    "09:00 - szabad hely ( 5db )",
+                    "09:10 - szabad hely ( 5db )",
+                    "09:20 - szabad hely ( 5db )",
+                    "09:30 - szabad hely ( 5db )",
+                    "09:40 - szabad hely ( 5db )",
+                    "09:50 - szabad hely ( 5db )",
+                    "08:00 - szabad hely ( 5db )",
+                    "08:10 - szabad hely ( 5db )",
+                    "08:20 - szabad hely ( 5db )",
+                    "08:30 - szabad hely ( 5db )",
+                    "08:40 - szabad hely ( 5db )",
+                    "08:50 - szabad hely ( 5db )",
+                    "09:00 - szabad hely ( 5db )",
+                    "09:10 - szabad hely ( 5db )",
+                    "09:20 - szabad hely ( 5db )",
+                    "09:30 - szabad hely ( 5db )",
+                    "09:40 - szabad hely ( 5db )",
+                    "09:50 - szabad hely ( 5db )",
+                ],
+
+                time_stump_busy: [
+                    "10:00 - foglalva",
+                    "10:10 - foglalva",
+                    "10:20 - foglalva",
+                    "10:30 - foglalva",
+                    "10:40 - foglalva",
+                    "10:50 - foglalva",
+                    "11:00 - foglalva",
+                    "11:10 - foglalva",
+                    "11:20 - foglalva",
+                    "11:30 - foglalva",
                 ],
                 month: "",
                 year: "",

@@ -12,26 +12,35 @@ const router = createRouter({
     {
       path: "/registration",
       name: "Regisztráció",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/Registration.vue"),
     },
     {
       path: "/current-available-places",
       name: "Aktuális szabad helyek",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/CurrentAvailablePlaces.vue"),
     },
     {
+      path: "/my-reservation",
+      name: "OMV üllői  ",
+      component: () => import("../views/MyReservation.vue"),
+    },
+    {
       path: "/my-reservations",
-      name: "Foglalásaim",
+      name: "OMV üllői",
+      component: () => import("../views/MyReservations.vue"),
+    },
+    {
+      path: "/end-of-reservation",
+      name: "Foglalás véglegesítése",
+      component: () => import("../views/EndOfReservation.vue"),
+    },
+    {
+      path: "/location-selector",
+      name: "Helyszín választó",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/MyReservations.vue"),
+      component: () => import("../views/LocationSelector.vue"),
     },
   ],
 });

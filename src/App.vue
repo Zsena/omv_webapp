@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import FixedNav from "./components/FixedNav.vue";
 import BaseMenu from "./components/Menu.vue";
+import MyReservations from "./views/MyReservations.vue";
 </script>
 
 <template>
