@@ -21,10 +21,10 @@
                     <RouterLink to="/my-rented-places" class="mr-4 hover:underline md:mr-6">Bérelt helyeim</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="" class="mr-4 hover:underline md:mr-6">Adatkezelési</RouterLink>
+                    <RouterLink to="/" class="mr-4 hover:underline md:mr-6">Adatkezelési</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="" class="hover:underline">Segítség</RouterLink>
+                    <RouterLink to="/" class="hover:underline">Segítség</RouterLink>
                 </li>
             </ul>
         </div>
