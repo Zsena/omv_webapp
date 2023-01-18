@@ -18,3 +18,9 @@ a {
 a:hover {
   color: rgba(0,51,102,.5);
 }
+
+.stretched-link::after {
+  content: "";
+  /* background-color: rgba(0,0,0,0); */
+  @apply absolute top-0 right-0 left-0 bottom-0 z-[1] pointer-events-auto bg-transparent;
+}
