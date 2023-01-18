@@ -28,7 +28,7 @@
             </RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">
+            <RouterLink class="nav-link" to="/my-rented-places">
               <span><img src="@/assets/img/svg/place.svg" alt="svg"></span><span class="ml-2">Bérelt helyeim</span>
             </RouterLink>
           </li>
