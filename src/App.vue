@@ -2,7 +2,8 @@
 import { RouterLink, RouterView } from "vue-router";
 import FixedNav from "./components/FixedNav.vue";
 import BaseMenu from "./components/Menu.vue";
-import MyReservations from "./views/MyReservations.vue";
+import StickyFooter from "./components/StickyFooter.vue";
+// import MyReservations from "./views/MyReservations.vue";
 </script>
 
 <template>
@@ -11,4 +12,5 @@ import MyReservations from "./views/MyReservations.vue";
   </header>
   <RouterView />
   <FixedNav />
+  <StickyFooter />
 </template>
