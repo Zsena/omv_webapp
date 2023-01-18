@@ -1,6 +1,3 @@
 <template>
-    <section class="h-screen">
-        Bérelt helyeim
-
-    </section>
+    Bérelt helyeim
 </template>
